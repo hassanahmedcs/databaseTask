@@ -21,6 +21,11 @@
 		D1D983351CB2B2C1009E7B3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D983171CB2B2C1009E7B3C /* UIKit.framework */; };
 		D1D9833D1CB2B2C1009E7B3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1D9833B1CB2B2C1009E7B3C /* InfoPlist.strings */; };
 		D1D9833F1CB2B2C1009E7B3C /* Database1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D9833E1CB2B2C1009E7B3C /* Database1Tests.m */; };
+		D1D983531CB2B366009E7B3C /* JETSAgenda.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D9834A1CB2B366009E7B3C /* JETSAgenda.m */; };
+		D1D983541CB2B366009E7B3C /* JETSExhibitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D9834C1CB2B366009E7B3C /* JETSExhibitor.m */; };
+		D1D983551CB2B366009E7B3C /* JETSProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D9834E1CB2B366009E7B3C /* JETSProfile.m */; };
+		D1D983561CB2B366009E7B3C /* JETSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D983501CB2B366009E7B3C /* JETSSession.m */; };
+		D1D983571CB2B366009E7B3C /* JETSSpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D983521CB2B366009E7B3C /* JETSSpeaker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		D1D9833A1CB2B2C1009E7B3C /* Database1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Database1Tests-Info.plist"; sourceTree = "<group>"; };
 		D1D9833C1CB2B2C1009E7B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D1D9833E1CB2B2C1009E7B3C /* Database1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Database1Tests.m; sourceTree = "<group>"; };
+		D1D983491CB2B366009E7B3C /* JETSAgenda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSAgenda.h; sourceTree = "<group>"; };
+		D1D9834A1CB2B366009E7B3C /* JETSAgenda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSAgenda.m; sourceTree = "<group>"; };
+		D1D9834B1CB2B366009E7B3C /* JETSExhibitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSExhibitor.h; sourceTree = "<group>"; };
+		D1D9834C1CB2B366009E7B3C /* JETSExhibitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSExhibitor.m; sourceTree = "<group>"; };
+		D1D9834D1CB2B366009E7B3C /* JETSProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSProfile.h; sourceTree = "<group>"; };
+		D1D9834E1CB2B366009E7B3C /* JETSProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSProfile.m; sourceTree = "<group>"; };
+		D1D9834F1CB2B366009E7B3C /* JETSSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSSession.h; sourceTree = "<group>"; };
+		D1D983501CB2B366009E7B3C /* JETSSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSSession.m; sourceTree = "<group>"; };
+		D1D983511CB2B366009E7B3C /* JETSSpeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSSpeaker.h; sourceTree = "<group>"; };
+		D1D983521CB2B366009E7B3C /* JETSSpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSSpeaker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +127,7 @@
 		D1D983191CB2B2C1009E7B3C /* Database1 */ = {
 			isa = PBXGroup;
 			children = (
+				D1D983481CB2B34A009E7B3C /* Beans */,
 				D1D983221CB2B2C1009E7B3C /* JETSAppDelegate.h */,
 				D1D983231CB2B2C1009E7B3C /* JETSAppDelegate.m */,
 				D1D983251CB2B2C1009E7B3C /* Main.storyboard */,
@@ -150,6 +166,23 @@
 				D1D9833B1CB2B2C1009E7B3C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1D983481CB2B34A009E7B3C /* Beans */ = {
+			isa = PBXGroup;
+			children = (
+				D1D983491CB2B366009E7B3C /* JETSAgenda.h */,
+				D1D9834A1CB2B366009E7B3C /* JETSAgenda.m */,
+				D1D9834B1CB2B366009E7B3C /* JETSExhibitor.h */,
+				D1D9834C1CB2B366009E7B3C /* JETSExhibitor.m */,
+				D1D9834D1CB2B366009E7B3C /* JETSProfile.h */,
+				D1D9834E1CB2B366009E7B3C /* JETSProfile.m */,
+				D1D9834F1CB2B366009E7B3C /* JETSSession.h */,
+				D1D983501CB2B366009E7B3C /* JETSSession.m */,
+				D1D983511CB2B366009E7B3C /* JETSSpeaker.h */,
+				D1D983521CB2B366009E7B3C /* JETSSpeaker.m */,
+			);
+			name = Beans;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D9832A1CB2B2C1009E7B3C /* JETSViewController.m in Sources */,
+				D1D983571CB2B366009E7B3C /* JETSSpeaker.m in Sources */,
+				D1D983561CB2B366009E7B3C /* JETSSession.m in Sources */,
+				D1D983531CB2B366009E7B3C /* JETSAgenda.m in Sources */,
+				D1D983541CB2B366009E7B3C /* JETSExhibitor.m in Sources */,
+				D1D983551CB2B366009E7B3C /* JETSProfile.m in Sources */,
 				D1D983241CB2B2C1009E7B3C /* JETSAppDelegate.m in Sources */,
 				D1D983201CB2B2C1009E7B3C /* main.m in Sources */,
 			);
