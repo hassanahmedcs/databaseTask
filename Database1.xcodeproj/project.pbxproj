@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61BEA51D1CB3782B008603AE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BEA5121CB3782B008603AE /* FMDatabase.m */; };
+		61BEA51E1CB3782B008603AE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BEA5141CB3782B008603AE /* FMDatabaseAdditions.m */; };
+		61BEA51F1CB3782B008603AE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BEA5161CB3782B008603AE /* FMDatabasePool.m */; };
+		61BEA5201CB3782B008603AE /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BEA5181CB3782B008603AE /* FMDatabaseQueue.m */; };
+		61BEA5211CB3782B008603AE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BEA51B1CB3782B008603AE /* FMResultSet.m */; };
+		61BEA5221CB3782B008603AE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61BEA51C1CB3782B008603AE /* Info.plist */; };
+		61BEA5241CB378BA008603AE /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BEA5231CB378BA008603AE /* libsqlite3.0.dylib */; };
+		61BEA52B1CB3847B008603AE /* JETSSpeakerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BEA52A1CB3847B008603AE /* JETSSpeakerModel.m */; };
+		61BEA5301CB38896008603AE /* JETSDBConnectionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BEA52F1CB38896008603AE /* JETSDBConnectionFactory.m */; };
 		D1D983141CB2B2C1009E7B3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D983131CB2B2C1009E7B3C /* Foundation.framework */; };
 		D1D983161CB2B2C1009E7B3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D983151CB2B2C1009E7B3C /* CoreGraphics.framework */; };
 		D1D983181CB2B2C1009E7B3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D983171CB2B2C1009E7B3C /* UIKit.framework */; };
@@ -39,6 +48,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61BEA5111CB3782B008603AE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		61BEA5121CB3782B008603AE /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		61BEA5131CB3782B008603AE /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		61BEA5141CB3782B008603AE /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		61BEA5151CB3782B008603AE /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		61BEA5161CB3782B008603AE /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		61BEA5171CB3782B008603AE /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		61BEA5181CB3782B008603AE /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		61BEA5191CB3782B008603AE /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		61BEA51A1CB3782B008603AE /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		61BEA51B1CB3782B008603AE /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		61BEA51C1CB3782B008603AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61BEA5231CB378BA008603AE /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		61BEA5291CB3847B008603AE /* JETSSpeakerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSSpeakerModel.h; sourceTree = "<group>"; };
+		61BEA52A1CB3847B008603AE /* JETSSpeakerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSSpeakerModel.m; sourceTree = "<group>"; };
+		61BEA52C1CB38562008603AE /* JETSAbstractModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSAbstractModel.h; sourceTree = "<group>"; };
+		61BEA52E1CB38896008603AE /* JETSDBConnectionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSDBConnectionFactory.h; sourceTree = "<group>"; };
+		61BEA52F1CB38896008603AE /* JETSDBConnectionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSDBConnectionFactory.m; sourceTree = "<group>"; };
 		D1D983101CB2B2C1009E7B3C /* Database1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Database1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D983131CB2B2C1009E7B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D1D983151CB2B2C1009E7B3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61BEA5241CB378BA008603AE /* libsqlite3.0.dylib in Frameworks */,
 				D1D983161CB2B2C1009E7B3C /* CoreGraphics.framework in Frameworks */,
 				D1D983181CB2B2C1009E7B3C /* UIKit.framework in Frameworks */,
 				D1D983141CB2B2C1009E7B3C /* Foundation.framework in Frameworks */,
@@ -94,6 +122,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61BEA5101CB3782B008603AE /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				61BEA5111CB3782B008603AE /* FMDatabase.h */,
+				61BEA5121CB3782B008603AE /* FMDatabase.m */,
+				61BEA5131CB3782B008603AE /* FMDatabaseAdditions.h */,
+				61BEA5141CB3782B008603AE /* FMDatabaseAdditions.m */,
+				61BEA5151CB3782B008603AE /* FMDatabasePool.h */,
+				61BEA5161CB3782B008603AE /* FMDatabasePool.m */,
+				61BEA5171CB3782B008603AE /* FMDatabaseQueue.h */,
+				61BEA5181CB3782B008603AE /* FMDatabaseQueue.m */,
+				61BEA5191CB3782B008603AE /* FMDB.h */,
+				61BEA51A1CB3782B008603AE /* FMResultSet.h */,
+				61BEA51B1CB3782B008603AE /* FMResultSet.m */,
+				61BEA51C1CB3782B008603AE /* Info.plist */,
+			);
+			name = fmdb;
+			path = ../fmdb;
+			sourceTree = "<group>";
+		};
+		61BEA5251CB3811E008603AE /* models */ = {
+			isa = PBXGroup;
+			children = (
+				61BEA5291CB3847B008603AE /* JETSSpeakerModel.h */,
+				61BEA52A1CB3847B008603AE /* JETSSpeakerModel.m */,
+				61BEA52C1CB38562008603AE /* JETSAbstractModel.h */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		61BEA52D1CB38855008603AE /* util */ = {
+			isa = PBXGroup;
+			children = (
+				61BEA52E1CB38896008603AE /* JETSDBConnectionFactory.h */,
+				61BEA52F1CB38896008603AE /* JETSDBConnectionFactory.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		D1D983071CB2B2C1009E7B3C = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +183,7 @@
 		D1D983121CB2B2C1009E7B3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				61BEA5231CB378BA008603AE /* libsqlite3.0.dylib */,
 				D1D983131CB2B2C1009E7B3C /* Foundation.framework */,
 				D1D983151CB2B2C1009E7B3C /* CoreGraphics.framework */,
 				D1D983171CB2B2C1009E7B3C /* UIKit.framework */,
@@ -127,7 +195,10 @@
 		D1D983191CB2B2C1009E7B3C /* Database1 */ = {
 			isa = PBXGroup;
 			children = (
-				D1D983481CB2B34A009E7B3C /* Beans */,
+				61BEA52D1CB38855008603AE /* util */,
+				61BEA5251CB3811E008603AE /* models */,
+				61BEA5101CB3782B008603AE /* fmdb */,
+				D1D983481CB2B34A009E7B3C /* beans */,
 				D1D983221CB2B2C1009E7B3C /* JETSAppDelegate.h */,
 				D1D983231CB2B2C1009E7B3C /* JETSAppDelegate.m */,
 				D1D983251CB2B2C1009E7B3C /* Main.storyboard */,
@@ -168,7 +239,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D1D983481CB2B34A009E7B3C /* Beans */ = {
+		D1D983481CB2B34A009E7B3C /* beans */ = {
 			isa = PBXGroup;
 			children = (
 				D1D983491CB2B366009E7B3C /* JETSAgenda.h */,
@@ -182,7 +253,7 @@
 				D1D983511CB2B366009E7B3C /* JETSSpeaker.h */,
 				D1D983521CB2B366009E7B3C /* JETSSpeaker.m */,
 			);
-			name = Beans;
+			path = beans;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61BEA5221CB3782B008603AE /* Info.plist in Resources */,
 				D1D9832C1CB2B2C1009E7B3C /* Images.xcassets in Resources */,
 				D1D9831E1CB2B2C1009E7B3C /* InfoPlist.strings in Resources */,
 				D1D983271CB2B2C1009E7B3C /* Main.storyboard in Resources */,
@@ -284,13 +356,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D9832A1CB2B2C1009E7B3C /* JETSViewController.m in Sources */,
+				61BEA52B1CB3847B008603AE /* JETSSpeakerModel.m in Sources */,
 				D1D983571CB2B366009E7B3C /* JETSSpeaker.m in Sources */,
 				D1D983561CB2B366009E7B3C /* JETSSession.m in Sources */,
+				61BEA51D1CB3782B008603AE /* FMDatabase.m in Sources */,
 				D1D983531CB2B366009E7B3C /* JETSAgenda.m in Sources */,
+				61BEA5201CB3782B008603AE /* FMDatabaseQueue.m in Sources */,
+				61BEA5211CB3782B008603AE /* FMResultSet.m in Sources */,
+				61BEA51F1CB3782B008603AE /* FMDatabasePool.m in Sources */,
 				D1D983541CB2B366009E7B3C /* JETSExhibitor.m in Sources */,
 				D1D983551CB2B366009E7B3C /* JETSProfile.m in Sources */,
 				D1D983241CB2B2C1009E7B3C /* JETSAppDelegate.m in Sources */,
 				D1D983201CB2B2C1009E7B3C /* main.m in Sources */,
+				61BEA51E1CB3782B008603AE /* FMDatabaseAdditions.m in Sources */,
+				61BEA5301CB38896008603AE /* JETSDBConnectionFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +578,7 @@
 				D1D983441CB2B2C1009E7B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1D983451CB2B2C1009E7B3C /* Build configuration list for PBXNativeTarget "Database1Tests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +587,7 @@
 				D1D983471CB2B2C1009E7B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
