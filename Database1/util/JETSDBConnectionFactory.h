@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "FMDB.h"
 @interface JETSDBConnectionFactory : NSObject
-
+-(Boolean)intializeDB;
++(JETSDBConnectionFactory*)getInstance;
+-(Boolean)excuteUpdate:(NSString*)query;
+-(FMResultSet*)excuteQuery:(NSString*)query;
 @end
