@@ -22,6 +22,7 @@
 -(void)createBean:(id)bean{
     
     JETSSpeaker *speaker=(JETSSpeaker *) bean;
+    
     NSString *insertSQL = [NSString stringWithFormat:
                            @"INSERT INTO Speaker (id, gender, imageURL, middleName, biography, firstName, lastName, companyName, title, phones, mobiles) VALUES (%ld, \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\")",
                            speaker.id, speaker.gender, speaker.imageURL, speaker.middleName, speaker.biography, speaker.firstName, speaker.lastName, speaker.companyName, speaker.title, [speaker.phones componentsJoinedByString:@","], [speaker.mobiles componentsJoinedByString:@","]];
@@ -61,12 +62,9 @@
         speaker.companyName = [rs stringForColumn:@"companyName"];
         speaker.title = [rs stringForColumn:@"title"];
         
-        NSString *phonesString = [rs stringForColumn:@"phones"];
-        NSString *mobilesString = [rs stringForColumn:@"mobiles"];
-        
         //mutable array can be init with normal array
-        NSMutableArray *phonesArray =[NSMutableArray arrayWithArray:[phonesString componentsSeparatedByString:@","]];
-        NSMutableArray *mobilesArray =[NSMutableArray arrayWithArray:[mobilesString componentsSeparatedByString:@","]];
+        NSMutableArray *phonesArray =[NSMutableArray arrayWithArray:[[rs stringForColumn:@"phones"] componentsSeparatedByString:@","]];
+        NSMutableArray *mobilesArray =[NSMutableArray arrayWithArray:[[rs stringForColumn:@"mobiles"] componentsSeparatedByString:@","]];
         
         speaker.phones = [phonesArray mutableCopy];
         speaker.mobiles = [mobilesArray mutableCopy];

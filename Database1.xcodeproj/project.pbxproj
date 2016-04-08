@@ -17,6 +17,7 @@
 		61BEA5241CB378BA008603AE /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BEA5231CB378BA008603AE /* libsqlite3.0.dylib */; };
 		61BEA52B1CB3847B008603AE /* JETSSpeakerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BEA52A1CB3847B008603AE /* JETSSpeakerModel.m */; };
 		61BEA5301CB38896008603AE /* JETSDBConnectionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BEA52F1CB38896008603AE /* JETSDBConnectionFactory.m */; };
+		D191350E1CB82CBE001B35CC /* JETSExhibitorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D191350D1CB82CBE001B35CC /* JETSExhibitorModel.m */; };
 		D1D983141CB2B2C1009E7B3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D983131CB2B2C1009E7B3C /* Foundation.framework */; };
 		D1D983161CB2B2C1009E7B3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D983151CB2B2C1009E7B3C /* CoreGraphics.framework */; };
 		D1D983181CB2B2C1009E7B3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D983171CB2B2C1009E7B3C /* UIKit.framework */; };
@@ -69,6 +70,8 @@
 		61BEA52C1CB38562008603AE /* JETSAbstractModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSAbstractModel.h; sourceTree = "<group>"; };
 		61BEA52E1CB38896008603AE /* JETSDBConnectionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSDBConnectionFactory.h; sourceTree = "<group>"; };
 		61BEA52F1CB38896008603AE /* JETSDBConnectionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSDBConnectionFactory.m; sourceTree = "<group>"; };
+		D191350C1CB82CBE001B35CC /* JETSExhibitorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSExhibitorModel.h; sourceTree = "<group>"; };
+		D191350D1CB82CBE001B35CC /* JETSExhibitorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSExhibitorModel.m; sourceTree = "<group>"; };
 		D1D983101CB2B2C1009E7B3C /* Database1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Database1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D983131CB2B2C1009E7B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D1D983151CB2B2C1009E7B3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -153,6 +156,8 @@
 				61BEA52C1CB38562008603AE /* JETSAbstractModel.h */,
 				614D314C1CB79C9600C2E6F3 /* JETSProfileModel.h */,
 				614D314D1CB79C9600C2E6F3 /* JETSProfileModel.m */,
+				D191350C1CB82CBE001B35CC /* JETSExhibitorModel.h */,
+				D191350D1CB82CBE001B35CC /* JETSExhibitorModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 				61BEA5211CB3782B008603AE /* FMResultSet.m in Sources */,
 				61BEA51F1CB3782B008603AE /* FMDatabasePool.m in Sources */,
 				D1D983541CB2B366009E7B3C /* JETSExhibitor.m in Sources */,
+				D191350E1CB82CBE001B35CC /* JETSExhibitorModel.m in Sources */,
 				D1D983551CB2B366009E7B3C /* JETSProfile.m in Sources */,
 				D1D983241CB2B2C1009E7B3C /* JETSAppDelegate.m in Sources */,
 				D1D983201CB2B2C1009E7B3C /* main.m in Sources */,
