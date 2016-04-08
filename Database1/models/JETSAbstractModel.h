@@ -14,6 +14,7 @@
 -(id)findById:(id)id_;
 -(NSMutableArray*)findAll;
 -(int)count;
+-(void)removeALL;
 @optional
 -(void)editBean:(id)bean;
 @end
