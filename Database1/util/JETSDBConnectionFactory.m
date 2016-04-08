@@ -26,6 +26,8 @@ static FMDatabase *adb=nil;
 }
 +(JETSDBConnectionFactory*)getInstance{
     static dispatch_once_t onceToken;
+    //create the database structure and initialize fmdb object for use
+    //database name saved in plist file
     dispatch_once(&onceToken, ^{
         NSString *path = [[NSBundle mainBundle] pathForResource: @"Database1-Info" ofType: @"plist"];
         NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile: path];

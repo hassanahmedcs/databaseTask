@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		614D314E1CB79C9600C2E6F3 /* JETSProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 614D314D1CB79C9600C2E6F3 /* JETSProfileModel.m */; };
 		61BEA51D1CB3782B008603AE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BEA5121CB3782B008603AE /* FMDatabase.m */; };
 		61BEA51E1CB3782B008603AE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BEA5141CB3782B008603AE /* FMDatabaseAdditions.m */; };
 		61BEA51F1CB3782B008603AE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BEA5161CB3782B008603AE /* FMDatabasePool.m */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		614D314C1CB79C9600C2E6F3 /* JETSProfileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSProfileModel.h; sourceTree = "<group>"; };
+		614D314D1CB79C9600C2E6F3 /* JETSProfileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSProfileModel.m; sourceTree = "<group>"; };
 		61BEA5111CB3782B008603AE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		61BEA5121CB3782B008603AE /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		61BEA5131CB3782B008603AE /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				61BEA5291CB3847B008603AE /* JETSSpeakerModel.h */,
 				61BEA52A1CB3847B008603AE /* JETSSpeakerModel.m */,
 				61BEA52C1CB38562008603AE /* JETSAbstractModel.h */,
+				614D314C1CB79C9600C2E6F3 /* JETSProfileModel.h */,
+				614D314D1CB79C9600C2E6F3 /* JETSProfileModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				D1D983571CB2B366009E7B3C /* JETSSpeaker.m in Sources */,
 				D1D983561CB2B366009E7B3C /* JETSSession.m in Sources */,
 				61BEA51D1CB3782B008603AE /* FMDatabase.m in Sources */,
+				614D314E1CB79C9600C2E6F3 /* JETSProfileModel.m in Sources */,
 				D1D983531CB2B366009E7B3C /* JETSAgenda.m in Sources */,
 				61BEA5201CB3782B008603AE /* FMDatabaseQueue.m in Sources */,
 				61BEA5211CB3782B008603AE /* FMResultSet.m in Sources */,
