@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    JETSDBConnectionFactory *fact=[JETSDBConnectionFactory getInstance:@"mydb.db"];
+    JETSDBConnectionFactory *fact=[JETSDBConnectionFactory getInstance];
     [fact excuteUpdate:[NSString stringWithFormat:@"INSERT INTO Exhibitor (id, imageURL, companyAddress, companyAbout, fax, contactName, contactTitle, companyUrl, email, countryName, cityName, companyName, phones, mobiles)  VALUES (%d, \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\")",4,@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test",@"test"]];
     FMResultSet *rs=[fact excuteQuery:@"SELECT COUNT(*) as _count FROM Exhibitor"];
     if([rs next]){

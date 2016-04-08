@@ -24,9 +24,13 @@ static FMDatabase *adb=nil;
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"JETSFirstinit"];
     NSLog(@"Is SQLite compiled with it's thread safe options turned on? %@!", [FMDatabase isSQLiteThreadSafe] ? @"Yes" : @"No");
 }
-+(JETSDBConnectionFactory*)getInstance:(NSString*)dbPath{
++(JETSDBConnectionFactory*)getInstance{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+        NSString *path = [[NSBundle mainBundle] pathForResource: @"Database1-Info" ofType: @"plist"];
+        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile: path];
+        NSString*dbPath= [dict objectForKey: @"JETS DBNAME"];
+        
         sharedInstance = [[JETSDBConnectionFactory alloc] init];
         adb = [FMDatabase databaseWithPath:dbPath];
         [adb open];

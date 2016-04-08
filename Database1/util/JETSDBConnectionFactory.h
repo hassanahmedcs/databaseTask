@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "FMDB.h"
 @interface JETSDBConnectionFactory : NSObject
-+(JETSDBConnectionFactory*)getInstance:(NSString*)dbPath;
++(JETSDBConnectionFactory*)getInstance;
 -(Boolean)excuteUpdate:(NSString*)query;
 -(FMResultSet*)excuteQuery:(NSString*)query;
 @end
