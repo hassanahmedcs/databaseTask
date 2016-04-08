@@ -8,7 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "JETSAbstractModel.h"
+#import "JETSDBConnectionFactory.h"
+#import "JETSSpeaker.h"
 
-@interface JETSSpeakerModel : NSObject <JETSAbstractModel>
+@interface JETSSpeakerModel : NSObject <JETSAbstractModel>{
+
+    JETSDBConnectionFactory *connection;
+
+}
 
 @end
