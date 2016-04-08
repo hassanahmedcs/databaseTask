@@ -131,4 +131,11 @@
     return count;
 }
 
+-(void)removeALL{
+    
+    NSString *deleteSQL = [NSString stringWithFormat:@"Delete FROM Speaker"];
+    
+    [connection excuteUpdate:deleteSQL];
+}
+
 @end
