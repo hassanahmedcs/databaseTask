@@ -34,6 +34,17 @@
     
     [connection excuteUpdate:insertSQL];
     
+    for (int i=0;i<[session.speakers count];i++)
+    {
+    
+        NSString *subInsertSQL = [NSString stringWithFormat:
+                               @"INSERT INTO Speaker_Session (speaker_id, session_id) VALUES (%ld, %ld)",
+                               session.id, (long)[session.speakers objectAtIndex:i]];
+        
+        [connection excuteUpdate:subInsertSQL];
+    
+    }
+    
 }
 
 -(void)removeBean:(id)bean{
@@ -43,6 +54,10 @@
     NSString *deleteSQL = [NSString stringWithFormat:@"Delete FROM Session WHERE id=%ld",session.id];
     
     [connection excuteUpdate:deleteSQL];
+    
+    NSString *subDeleteSQL = [NSString stringWithFormat:@"Delete FROM Speaker_Session WHERE session_id=%ld",session.id];
+    
+    [connection excuteUpdate:subDeleteSQL];
     
 }
 
@@ -78,6 +93,24 @@
         
     }
     
+    NSString *subQuerySQL = [NSString stringWithFormat:@"SELECT speaker_id FROM Speaker_Session WHERE session_id=%ld",myId];
+    
+    FMResultSet *rs1=[connection excuteQuery:subQuerySQL];
+    
+    NSMutableArray *speakers=[NSMutableArray new];
+    
+    while ([rs1 next]) {
+        
+        long mySpeaker=[rs longForColumn:@"speaker_id"];
+        
+        NSNumber* xWrapped = [NSNumber numberWithLong:mySpeaker];
+        
+        [speakers addObject:xWrapped];
+        
+    }
+    
+    session.speakers = [speakers mutableCopy];
+    
     return session;
     
 }
@@ -85,6 +118,8 @@
 -(id)findByDate:(id)date_{
 
     long myDate=(long)date_;
+    
+    long mySessionId=0;
     
     NSString *querySQL = [NSString stringWithFormat:@"SELECT * FROM Session WHERE date=%ld",myDate];
     
@@ -95,6 +130,7 @@
     while ([rs next]) {
         
         session.id = [rs longForColumn:@"id"];
+        mySessionId=session.id;
         session.name = [rs stringForColumn:@"name"];
         session.size = [rs stringForColumn:@"size"];
         session.color = [rs stringForColumn:@"color"];
@@ -113,6 +149,24 @@
         session.sessionTags = [sessionTagsArray mutableCopy];
         
     }
+    
+    NSString *subQuerySQL = [NSString stringWithFormat:@"SELECT speaker_id FROM Speaker_Session WHERE session_id=%ld",mySessionId];
+    
+    FMResultSet *rs1=[connection excuteQuery:subQuerySQL];
+    
+    NSMutableArray *speakers=[NSMutableArray new];
+    
+    while ([rs1 next]) {
+        
+        long mySpeaker=[rs longForColumn:@"speaker_id"];
+        
+        NSNumber* xWrapped = [NSNumber numberWithLong:mySpeaker];
+        
+        [speakers addObject:xWrapped];
+        
+    }
+    
+    session.speakers = [speakers mutableCopy];
     
     return session;
 }
@@ -147,6 +201,24 @@
         
         session.sessionTags = [sessionTagsArray mutableCopy];
         
+        NSString *subQuerySQL = [NSString stringWithFormat:@"SELECT speaker_id FROM Speaker_Session WHERE session_id=%ld",session.id];
+        
+        FMResultSet *rs1=[connection excuteQuery:subQuerySQL];
+        
+        NSMutableArray *speakers=[NSMutableArray new];
+        
+        while ([rs1 next]) {
+            
+            long mySpeaker=[rs longForColumn:@"speaker_id"];
+            
+            NSNumber* xWrapped = [NSNumber numberWithLong:mySpeaker];
+            
+            [speakers addObject:xWrapped];
+            
+        }
+        
+        session.speakers = [speakers mutableCopy];
+        
         [result addObject:session];
         
     }
@@ -177,6 +249,10 @@
     NSString *deleteSQL = [NSString stringWithFormat:@"Delete FROM Session"];
     
     [connection excuteUpdate:deleteSQL];
+    
+    NSString *subDeleteSQL = [NSString stringWithFormat:@"Delete FROM Speaker_Session"];
+    
+    [connection excuteUpdate:subDeleteSQL];
     
 }
 
