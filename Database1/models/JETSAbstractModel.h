@@ -16,6 +16,7 @@
 -(int)count;
 -(void)removeALL;
 @optional
+-(id)findByDate:(id)date_;
 -(void)editBean:(id)bean;
 @end
 

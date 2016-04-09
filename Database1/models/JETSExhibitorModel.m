@@ -11,12 +11,17 @@
 @implementation JETSExhibitorModel
 
 - (id)init {
+    
     self = [super init];
     
     if (self) {
+        
         connection=[JETSDBConnectionFactory getInstance];
+        
     }
+    
     return self;
+    
 }
 
 -(void)createBean:(id)bean{
@@ -28,6 +33,7 @@
                            exhibitor.id, exhibitor.imageURL, exhibitor.companyAddress, exhibitor.companyAbout, exhibitor.fax, exhibitor.contactName, exhibitor.contactTitle, exhibitor.companyUrl, exhibitor.email, exhibitor.countryName, exhibitor.cityName, exhibitor.companyName, [exhibitor.phones componentsJoinedByString:@","], [exhibitor.mobiles componentsJoinedByString:@","]];
     
     [connection excuteUpdate:insertSQL];
+    
 }
 
 -(void)removeBean:(id)bean{
@@ -132,6 +138,7 @@
     }
     
     return count;
+    
 }
 
 -(void)removeALL{
@@ -139,6 +146,7 @@
     NSString *deleteSQL = [NSString stringWithFormat:@"Delete FROM Exhibitor"];
     
     [connection excuteUpdate:deleteSQL];
+    
 }
 
 @end

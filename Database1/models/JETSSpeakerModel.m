@@ -11,12 +11,17 @@
 @implementation JETSSpeakerModel
 
 - (id)init {
+    
     self = [super init];
     
     if (self) {
+        
         connection=[JETSDBConnectionFactory getInstance];
+        
     }
+    
     return self;
+    
 }
 
 -(void)createBean:(id)bean{
@@ -28,6 +33,7 @@
                            speaker.id, speaker.gender, speaker.imageURL, speaker.middleName, speaker.biography, speaker.firstName, speaker.lastName, speaker.companyName, speaker.title, [speaker.phones componentsJoinedByString:@","], [speaker.mobiles componentsJoinedByString:@","]];
     
     [connection excuteUpdate:insertSQL];
+    
 }
 
 -(void)removeBean:(id)bean{
@@ -115,6 +121,7 @@
 }
               
 -(int)count{
+    
     //prefered with agregate function to give the column alias
     NSString *querySQL = [NSString stringWithFormat:@"SELECT COUNT(*) as count_ FROM Speaker"];
     
@@ -127,6 +134,7 @@
     }
     
     return count;
+    
 }
 
 -(void)removeALL{
@@ -134,6 +142,7 @@
     NSString *deleteSQL = [NSString stringWithFormat:@"Delete FROM Speaker"];
     
     [connection excuteUpdate:deleteSQL];
+    
 }
 
 @end

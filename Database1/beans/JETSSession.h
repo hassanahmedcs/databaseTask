@@ -21,6 +21,7 @@
 @property Boolean *liked;
 @property NSMutableArray *sessionTags;
 @property NSMutableArray *speakers;
+@property long date;
 @property long startDate;
 @property long endDate;
 
