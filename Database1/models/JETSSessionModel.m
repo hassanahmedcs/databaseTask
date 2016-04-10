@@ -29,7 +29,7 @@
     JETSSession *session=(JETSSession *) bean;
     
     NSString *insertSQL = [NSString stringWithFormat:
-                           @"INSERT INTO Session (id, name, size, color, location, description, status, sessionType, liked, sessionTags, date, startDate, endDate) VALUES (%ld, \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", %d, \"%@\", \"%s\", \"%@\", %ld, %ld, %ld)",
+                           @"INSERT INTO Session (id, name, size, color, location, description, status, sessionType, liked, sessionTags, date, startDate, endDate) VALUES (%ld, \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", %d, \"%@\", \"%@\", \"%@\", %ld, %ld, %ld)",
                            session.id, session.name, session.size, session.color, session.location, session.description, session.status, session.sessionType, session.liked, [session.sessionTags componentsJoinedByString:@","], session.date, session.startDate, session.endDate];
     
     [connection excuteUpdate:insertSQL];
@@ -81,7 +81,7 @@
         session.description = [rs stringForColumn:@"description"];
         session.status = [rs intForColumn:@"status"];
         session.sessionType = [rs stringForColumn:@"sessionType"];
-        session.liked = [rs boolForColumn:@"liked"];
+        session.liked = [rs stringForColumn:@"liked"];
         session.date = [rs longForColumn:@"date"];
         session.startDate = [rs longForColumn:@"startDate"];
         session.endDate = [rs longForColumn:@"endDate"];
@@ -138,7 +138,7 @@
         session.description = [rs stringForColumn:@"description"];
         session.status = [rs intForColumn:@"status"];
         session.sessionType = [rs stringForColumn:@"sessionType"];
-        session.liked = [rs boolForColumn:@"liked"];
+        session.liked = [rs stringForColumn:@"liked"];
         session.date = [rs longForColumn:@"date"];
         session.startDate = [rs longForColumn:@"startDate"];
         session.endDate = [rs longForColumn:@"endDate"];
@@ -191,7 +191,7 @@
         session.description = [rs stringForColumn:@"description"];
         session.status = [rs intForColumn:@"status"];
         session.sessionType = [rs stringForColumn:@"sessionType"];
-        session.liked = [rs boolForColumn:@"liked"];
+        session.liked = [rs stringForColumn:@"liked"];
         session.date = [rs longForColumn:@"date"];
         session.startDate = [rs longForColumn:@"startDate"];
         session.endDate = [rs longForColumn:@"endDate"];

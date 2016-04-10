@@ -10,7 +10,7 @@
 
 @implementation JETSSession
 
--(id)initWithName:(NSString *)name_ size:(NSString *)size_ color:(NSString *)color_ location:(NSString *)location_ id:(long)id_ description:(NSString *)description_ status:(int)status_ sessionType:(NSString *)sessionType_ liked:(Boolean *)liked_ sessionTags:(NSMutableArray *)sessionTags_ speakers:(NSMutableArray *)speakers_ date:(long)date_ startDate:(long)startDate_ endDate:(long)endDate_
+-(id)initWithName:(NSString *)name_ size:(NSString *)size_ color:(NSString *)color_ location:(NSString *)location_ id:(long)id_ description:(NSString *)description_ status:(int)status_ sessionType:(NSString *)sessionType_ liked:(NSString *)liked_ sessionTags:(NSMutableArray *)sessionTags_ speakers:(NSMutableArray *)speakers_ date:(long)date_ startDate:(long)startDate_ endDate:(long)endDate_
 {
 
     self = [super init];
