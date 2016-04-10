@@ -13,4 +13,6 @@
 @property long date;
 @property NSMutableArray *sessions;
 
+-(id)initWithDate:(long)date_ sessions:(NSMutableArray *)sessions_;
+
 @end

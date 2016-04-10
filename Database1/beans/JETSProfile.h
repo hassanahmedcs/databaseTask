@@ -25,4 +25,6 @@
 @property NSMutableArray *phones;
 @property NSMutableArray *mobiles;
 
+-(id)initWithId:(long)id_ birthDate:(NSString *)birthDate_ code:(NSString *)code_ imageURL:(NSString *)imageURL_ middleName:(NSString *)middleName_ gender:(NSString *)gender_ firstName:(NSString *)firstName_ email:(NSString *)email_ lastName:(NSString *)lastName_ countryName:(NSString *)countryName_ cityName:(NSString *)cityName_ title:(NSString *)title_ phones:(NSMutableArray *)phones_ mobiles:(NSMutableArray *)mobiles_;
+
 @end
